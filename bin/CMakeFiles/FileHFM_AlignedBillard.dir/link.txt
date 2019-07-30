@@ -1,1 +1,0 @@
-/usr/bin/g++-8   -march=native  -rdynamic CMakeFiles/FileHFM_AlignedBillard.dir/FileHFM.cpp.o  -o FileHFM_AlignedBillard 

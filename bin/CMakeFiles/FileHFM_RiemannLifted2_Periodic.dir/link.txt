@@ -1,1 +1,0 @@
-/usr/bin/g++-8   -march=native  -rdynamic CMakeFiles/FileHFM_RiemannLifted2_Periodic.dir/FileHFM.cpp.o  -o FileHFM_RiemannLifted2_Periodic 

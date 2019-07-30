@@ -1,1 +1,0 @@
-/usr/bin/g++-8   -march=native  -rdynamic CMakeFiles/FileHFM_ReedsSheppForward3.dir/FileHFM.cpp.o  -o FileHFM_ReedsSheppForward3 
