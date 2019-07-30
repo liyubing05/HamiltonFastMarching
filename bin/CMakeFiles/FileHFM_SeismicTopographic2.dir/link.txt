@@ -1,0 +1,1 @@
+/usr/bin/g++-8   -march=native  -rdynamic CMakeFiles/FileHFM_SeismicTopographic2.dir/FileHFM.cpp.o  -o FileHFM_SeismicTopographic2 
