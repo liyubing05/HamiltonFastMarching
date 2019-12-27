@@ -20,7 +20,7 @@ HFMInterface<T>::SpecializationsDefault_<true,Dummy> {
     template<typename E> using DataSource_Array = typename HFMI::template DataSource_Array<E>;
     template<typename E> using DataSource_Indep = typename HFMI::template DataSource_Indep<E>;
     template<typename E> using DataSource_Dep = typename HFMI::template DataSource_Dep<E>;
-    template<typename E> static std::unique_ptr<DataSource<E> > GetField(std::string name,HFMI*that) {
+    template<typename E> static std::unique_ptr<DataSource<E> > GetField(KeyCRef name,HFMI*that) {
         typedef std::unique_ptr<DataSource<E> > ResultType;
         auto & io = that->io;
         const size_t nDims = io.template GetDimensions<E>(name).size();
@@ -30,7 +30,7 @@ HFMInterface<T>::SpecializationsDefault_<true,Dummy> {
         else if(nDims==DimDep) {    return ResultType(new DataSource_Dep<E>(io.template GetArray<E, DimDep>(name)));}
         else {ExceptionMacro("Field " << name << " has incorrect depth.\n");}
     }
-    template<typename E> static std::unique_ptr<DataSource<E> > GetIntegralField(std::string name,HFMI*that) {
+    template<typename E> static std::unique_ptr<DataSource<E> > GetIntegralField(KeyCRef name,HFMI*that) {
         typedef std::unique_ptr<DataSource<E> > ResultType;
         auto & io = that->io;
         const size_t nDims = io.template GetDimensions<ScalarType>(name).size();
@@ -101,7 +101,7 @@ HFMInterface<T>::SpecializationsDefault_<false,Dummy> {
     template<typename E> using DataSource = typename HFM::template DataSource<E>;
     template<typename E> using DataSource_Value = typename HFMI::template DataSource_Value<E>;
     template<typename E> using DataSource_Array = typename HFMI::template DataSource_Array<E>;
-    template<typename E> static std::unique_ptr<DataSource<E> > GetField(std::string name, HFMI*that) {
+    template<typename E> static std::unique_ptr<DataSource<E> > GetField(KeyCRef name, HFMI*that) {
         typedef std::unique_ptr<DataSource<E> > ResultType;
         auto & io = that->io;
         const size_t nDims = io.template GetDimensions<E>(name).size();
@@ -109,7 +109,7 @@ HFMInterface<T>::SpecializationsDefault_<false,Dummy> {
         else if(nDims==Dimension) { return ResultType(new DataSource_Array<E>(io.template GetArray<E, Dimension>(name)));}
         else {ExceptionMacro("Field " << name << " has incorrect depth.\n");}
     }
-    template<typename E> static std::unique_ptr<DataSource<E> > GetIntegralField(std::string name,HFMI*that) {
+    template<typename E> static std::unique_ptr<DataSource<E> > GetIntegralField(KeyCRef name,HFMI*that) {
         typedef std::unique_ptr<DataSource<E> > ResultType;
         auto & io = that->io;
         const size_t nDims = io.template GetDimensions<ScalarType>(name).size();
@@ -254,11 +254,11 @@ struct HFMInterface<T>::TimeDependentSource : DataSource<E> {
 // ---- Getting fields -------
 
 template<typename T> template<typename E> auto
-HFMInterface<T>::GetField(std::string s, bool mayDependOnTime) -> std::unique_ptr<DataSource<E> > {
+HFMInterface<T>::GetField(KeyCRef s, bool mayDependOnTime) -> std::unique_ptr<DataSource<E> > {
     if(io.HasField(s)){
     std::unique_ptr<DataSource<E> > result = SpecializationsDefault::template GetField<E>(s,this);
     if(!result->CheckDims(stencil.dims)){
-        ExceptionMacro("Error : Field " << s << " has inconsistent dimensions");}
+        ExceptionMacro("Error : Field " << s << " has inconsistent dimensions.");}
         return std::move(result);
     } else if(mayDependOnTime && io.HasField(s+"_times")) {
         typedef TimeDependentSource<E> ResultType;
@@ -272,12 +272,20 @@ HFMInterface<T>::GetField(std::string s, bool mayDependOnTime) -> std::unique_pt
         for(int i=0; i<times.size(); ++i){
             pResult->interpolationData.push_back({times[i], GetField<E>(s+"_"+std::to_string(i))});}
         return std::move(pResult);
-    } else ExceptionMacro("Error : Field " << s << " not found.\n");
+    } else ExceptionMacro("Error : Field " << s << " not found.");
     
 }
 
+template<typename T>
+int HFMInterface<T>::FieldElementSize(KeyCRef key) const {
+	int size = io.GetElementSize(key, Dimension);
+	if(size<0) size = io.GetElementSize(key, 0);
+	if(size<0) ExceptionMacro("Error : field " << key << " has invalid depth.");
+	return size;
+}
+
 template<typename T> template<typename E> auto
-HFMInterface<T>::GetIntegralField(std::string s) -> std::unique_ptr<DataSource<E> > {
+HFMInterface<T>::GetIntegralField(KeyCRef s) -> std::unique_ptr<DataSource<E> > {
     std::unique_ptr<DataSource<E> > result = SpecializationsDefault::template GetIntegralField<E>(s,this);
     if(!result->CheckDims(stencil.dims)){
         ExceptionMacro("Error : Field " << s << " has inconsistent dimensions.\n");}
@@ -287,12 +295,18 @@ HFMInterface<T>::GetIntegralField(std::string s) -> std::unique_ptr<DataSource<E
 // ---------- Running  ---------
 template<typename T> void HFMInterface<T>::
 Run() {
+	
+
     Run_SetupIO();
     Run_SetupStencil();
     Run_SetupSolver();
     Run_SetupExtraAlgorithms();
     if(Run_RunSolver()) return;
+	
+	const clock_t top = clock();
     Run_ExtractGeodesics();
+	io.Set<ScalarType>("GeodesicCPUTime",(clock()-top)/double(CLOCKS_PER_SEC));
+
     Run_ExportData();
 }
 
@@ -484,25 +498,26 @@ SetupSingleAlgorithm(){
 
 template<typename T> bool HFMInterface<T>::
 Run_RunSolver() {
-    if(!pFM->seeds.empty()){
+	if(io.HasField("values") && io.HasField("activeNeighs")){
+		if(io.verbosity>=1) Msg() << "Bypassing fast marching solver based on cached data.\n";
+		std::fill(pFM->acceptedFlags.begin(),pFM->acceptedFlags.end(),true);
+	} else if(pFM->seeds.empty()) {
+		WarnMsg() << "No seeds to run fast marching solver,"
+		<< " and missing values or activeNeighs to compute geodesics.\n";
+		return true;
+    } else {
         const clock_t top = clock();
         pFM->Run();
         const clock_t elapsed = clock()-top;
         const ScalarType FMCPUTime = ScalarType(elapsed)/CLOCKS_PER_SEC;
         io.Set<ScalarType>("FMCPUTime",FMCPUTime);
         if(io.verbosity>=1) Msg() << "Fast marching solver completed in " << FMCPUTime << " s.\n";
-    } else {
-        if(!io.HasField("values") || !io.HasField("activeNeighs")){
-            WarnMsg() << "No seeds to run fast marching solver,"
-            << " and missing values or activeNeighs to compute geodesics.\n";
-            return true;
-        }
     }
     return false;
 }
 
 template<typename T> void HFMInterface<T>::
-ExportGeodesics(std::string suffix, const std::vector<PointType> & tips){
+ExportGeodesics(KeyCRef suffix, const std::vector<PointType> & tips){
     if(pGeodesicSolver==nullptr){
         typedef std::unique_ptr<GeodesicSolverInterface> GeoSolverPtr;
         std::string geodesicSolverType =
@@ -522,9 +537,9 @@ ExportGeodesics(std::string suffix, const std::vector<PointType> & tips){
     geodesicPoints.reserve((size_t)std::accumulate(geodesicLengths.begin(), geodesicLengths.end(), 0.));
     for(const auto & geo : geodesics) for(const PointType & p : geo) geodesicPoints.push_back(stencil.Param().ReDim(p));
     
-    if(!suffix.empty()) suffix = "_"+suffix;
-    io.SetVector("geodesicPoints"+suffix, geodesicPoints);
-    io.SetVector("geodesicLengths"+suffix, geodesicLengths);
+	const std::string sep = suffix.empty() ? "" : "_";
+    io.SetVector("geodesicPoints"+sep+suffix, geodesicPoints);
+    io.SetVector("geodesicLengths"+sep+suffix, geodesicLengths);
 }
 
 template<typename T> void HFMInterface<T>::
@@ -578,7 +593,30 @@ Run_ExportData() {
         }
         io.SetArray<VectorType>("geodesicFlow", flow);
     }
-    
+	if(io.Get<ScalarType>("exportActiveOffsets",0.)) {
+		// Possible improvement : do simultaneously with exportGeodesicFlow
+		// to avoid recomputing twice.
+		Redeclare3Types(HFM,DiscreteFlowType,OffsetType,ShortType)
+		using ElemType = std::array<ScalarType,DiscreteFlowType::max_size()>;
+		Array<ElemType,Dimension> flow;
+        flow.dims=pFM->values.dims;
+        flow.resize(pFM->values.size());
+        for(DiscreteType i=0; i<flow.size(); ++i){
+			DiscreteFlowType discreteFlow;
+			pFM->Recompute(flow.Convert(i),discreteFlow);
+			ElemType & elem = flow[i];
+			
+			for(int j=0; j<discreteFlow.size(); ++j){
+				const OffsetType & offset = discreteFlow[j].offset;
+				unsigned long offset_tolong = 0;
+				for(int k=0; k<Dimension; ++k){
+					offset_tolong += std::make_unsigned_t<ShortType>(offset[k]) << (8*sizeof(ShortType)*(Dimension-k-1));}
+				elem[j] = ScalarType(offset_tolong);
+			}
+			for(int j=discreteFlow.size(); j<discreteFlow.max_size(); ++j) {elem[j]=0;}
+        }
+        io.SetArray<ElemType>("activeOffsets", flow);
+	}
     for(const auto & pAlg : extras) pAlg->Finally(this);
 }
 

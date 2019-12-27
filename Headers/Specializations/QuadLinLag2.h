@@ -8,6 +8,8 @@
 #ifndef QuadLinLag2_h
 #define QuadLinLag2_h
 
+#include "JMM_CPPLibs/Macros/DependentFalse.h"
+
 #include "Base/Lagrangian2Stencil.h"
 #include "JMM_CPPLibs/LinearAlgebra/RanderNorm.h"
 #include "JMM_CPPLibs/LinearAlgebra/AsymmetricQuadraticNorm.h"
@@ -15,7 +17,6 @@
 #include "Specializations/CommonTraits.h"
 #include "JMM_CPPLibs/LinearAlgebra/HopfLaxMinimize.h"
 #include "JMM_CPPLibs/LinearAlgebra/VectorPairType.h"
-
 
 /// Traits and stencil for metrics built of a quadratic and a linear part
 
@@ -60,7 +61,6 @@ struct StencilQuadLinLag2 final
 	// Generic
 	typedef typename Traits::template DataSource<MetricElementType> MetricType;
 	std::unique_ptr<MetricType> pMetric;
-	bool dualizeMetric = false;
 	using ParamType = typename HFM::template _ParamDefault<2,void>; // Distinct scale on each axis
 	ParamType param;
 
@@ -86,6 +86,8 @@ private:
 	std::vector<OffsetType> tmp_stencil;
 	std::vector<VectorType> tmp_stencil_vec;
 	std::vector<ScalarType> tmp_stencil_scal;
+	template<typename Norm, bool b> struct MetricCaster;
+	template<bool b> void SetMetricCaster(HFMI *);
 };
 
 using StencilRander2 = StencilQuadLinLag2<TraitsRanderLag2>;

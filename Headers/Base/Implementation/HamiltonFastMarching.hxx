@@ -188,7 +188,7 @@ const -> RecomputeType {
 		p->BeforeRecompute(updatedIndex);}
     const DiscreteType updatedLinearIndex = values.Convert(updatedIndex);
     const ActiveNeighFlagType active = activeNeighs[updatedLinearIndex];
-    if(active.none()) return {values[updatedLinearIndex],0.}; // Handled below
+    if(active.none()) return {values[updatedLinearIndex],0.};
 	
 	// First order scheme, without factorisation, used for dynamic factoring pre-process.
 	auto GetValue1 = [this,&updatedIndex](OffsetType offset, int & ord) -> ScalarType {
@@ -220,7 +220,6 @@ const -> RecomputeType {
 	(OffsetType offset, int & ord) -> ScalarType {
         //order code : 0 -> invalid, else requested/used order
 		
-		
         IndexType acceptedIndex = updatedIndex+IndexDiff::CastCoordinates(offset);
         const auto transform = dom.Periodize(acceptedIndex,updatedIndex);
         if(!transform.IsValid()) {ord=0; return -Traits::Infinity();}
@@ -228,7 +227,7 @@ const -> RecomputeType {
 		if(!acceptedFlags[acceptedLinearIndex]) {ord=0; return -Traits::Infinity();}
 		
         const ScalarType acceptedValue = values[acceptedLinearIndex];
-		
+
 		ord=std::min(order,ord);
 		while(ord>=2){ // Single iteration
 			OffsetType offset2 = offset;
@@ -416,9 +415,7 @@ GeodesicFlow(const IndexType & index) const -> FlowDataType {
     result.width = rec.width;
     
     result.flow.fill(0.);
-    for(const auto & offsetWeight : discreteFlow){
-        const OffsetType & offset = offsetWeight.offset;
-        const ScalarType & weight = offsetWeight.weight;
+    for(const auto & [offset,weight] : discreteFlow){
         assert(weight>=0);
         for(int i=0; i<Dimension; ++i){
             result.flow[i]+=weight*ScalarType(offset[i]);}

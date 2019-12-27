@@ -8,6 +8,37 @@
 #ifndef QuadLinLag2_hxx
 #define QuadLinLag2_hxx
 
+template<typename T> template<typename Norm, bool dualize>
+struct StencilQuadLinLag2<T>::MetricCaster : StencilQuadLinLag2<T>::MetricType {
+	using Traits = T;
+	using StencilType = StencilQuadLinLag2<T>;
+	Redeclare5Types(StencilType,IndexType,MetricElementType,ScalarType,SymmetricMatrixType,NormType)
+	using MetricSource = typename Traits::template DataSource<Norm>;
+	std::unique_ptr<MetricSource> pMetric;
+	MetricCaster(std::unique_ptr<MetricSource> pMetric_):pMetric(std::move(pMetric_)){};
+	virtual bool CheckDims(const IndexType & dims) const {return pMetric->CheckDims(dims);};
+	virtual MetricElementType operator()(const IndexType & index) const {
+		using Sym = SymmetricMatrixType;
+		using Vec = VectorType;
+		if constexpr(std::is_same_v<Norm,ScalarType>) {
+			ScalarType s = (*pMetric)(index);
+			s = dualize ? 1./(s*s) : (s*s);
+			return MetricElementType{s*Sym::Identity(),Vec::Constant(0.)};
+		} else if constexpr(std::is_same_v<Norm,SymmetricMatrixType>) {
+			SymmetricMatrixType s = (*pMetric)(index);
+			if(dualize) {s = s.Inverse();}
+			return MetricElementType{s,Vec::Constant(0.)};
+		} else if constexpr(std::is_same_v<Norm,MetricElementType>) {
+			const auto [m,w] = (*pMetric)(index);
+			NormType norm{m,w};
+			if(dualize) {norm=norm.DualNorm();}
+			return MetricElementType{norm.m,norm.w};
+		} else {
+			static_assert(dependent_false_v<T>,"Unsupported norm type.");
+		}
+	};
+};
+
 
 template<typename T> void StencilQuadLinLag2<T>::
 Setup(HFMI * that){
@@ -18,11 +49,8 @@ Setup(HFMI * that){
 	auto & io = that->io;
 	if(io.HasField("dualMetric")) {
 		if(io.HasField("metric")) ExceptionMacro("Error: both primal and dual metric provided");
-		pMetric = that->template GetField<MetricElementType>("dualMetric",false);
-		dualizeMetric=true;
-	} else {
-		pMetric = that->template GetField<MetricElementType>("metric",false);
-	}
+		SetMetricCaster<true>(that);
+	} else {SetMetricCaster<false>(that);}
 	cosAngleMin = io.template Get<ScalarType>("cosAngleMin",cosAngleMin);
 	if(io.template Get<ScalarType>("refineStencilAtWallBoundary",0.) && io.HasField("walls")){
 		wallBoundaryAngularResolution = io.template Get<ScalarType>("wallBoundaryAngularResolution",wallBoundaryAngularResolution,2);
@@ -33,6 +61,26 @@ Setup(HFMI * that){
 		auto pWalls = that->template GetIntegralField<bool>("walls");
 		for(DiscreteType i=0; i<walls.size(); ++i){walls[i]=(*pWalls)(walls.Convert(i));}
 	}
+}
+
+template<typename T> template<bool dualize>
+void StencilQuadLinLag2<T>::SetMetricCaster(HFMI * that){
+	using Sym = SymmetricMatrixType;
+	using Met = MetricElementType;
+	const std::string key = dualize ? "dualMetric" : "metric";
+	const int elemSize = that->FieldElementSize(key);
+	switch(elemSize){
+		case 1:
+			pMetric.reset(new MetricCaster<ScalarType,dualize>(that->template GetField<ScalarType>(key,false)));
+			break;
+		case Sym::InternalDimension:
+			pMetric.reset(new MetricCaster<Sym,dualize>(that->template GetField<Sym>(key,false)));
+			break;
+		default:
+			if(dualize) {pMetric.reset(new MetricCaster<Met,dualize>(that->template GetField<Met>(key,false)));}
+			else {pMetric = that->template GetField<Met>(key,false);}
+	}
+
 }
 
 template<typename T> auto StencilQuadLinLag2<T>::
@@ -51,9 +99,7 @@ template<typename T> auto StencilQuadLinLag2<T>::
 Rescale(const MetricElementType & data)
 const -> NormType {
 	const auto & [m,v] = data;
-	
 	NormType norm{m,v};
-	if(dualizeMetric) {norm = norm.DualNorm();}
 	
 	norm.m = norm.m.ComponentWiseProduct(gridScales);
 	norm.w = norm.w.ComponentWiseProduct(VectorType::FromOrigin(param.gridScales));

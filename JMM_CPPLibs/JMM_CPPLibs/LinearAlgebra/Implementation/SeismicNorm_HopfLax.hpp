@@ -35,12 +35,18 @@ const -> std::pair<ComponentType,Vec<2> > {
 	// Check the first vertex
 	VectorType const g0 = GradNorm(neigh[0]);
 	ComponentType const d0 = g0.ScalarProduct(n01)+l01;
-	if(d0>=0) {return {g0.ScalarProduct(neigh[0])+l[0],Vec<2>{1.,0.}}; }
+	if(d0>=0) {
+		const ScalarType norm0 = g0.ScalarProduct(neigh[0]);
+		return {norm0+l[0],Vec<2>{1./norm0,0.}}; }
+	//neigh[0].ScalarProduct(g0)
 	
 	// Check the second vertex
 	VectorType const g1 = GradNorm(neigh[1]);
 	ComponentType const d1 = g1.ScalarProduct(n01)+l01;
-	if(d1<=0) {return {g1.ScalarProduct(neigh[1])+l[1],Vec<2>{0.,1.}}; }
+	if(d1<=0) {
+		const ScalarType norm1 = g1.ScalarProduct(neigh[1]);
+		return {norm1+l[1],Vec<2>{0.,1./norm1}}; }
+	//neigh[1].ScalarProduct(g1)
 	
 	// The minimum is attained in the interior.
 	// Make a guess, and call unconstrained optimization
@@ -91,13 +97,16 @@ const -> std::pair<ComponentType,Vec<3> > {
 	
 	// Is the infimum attained at a vertex ?
 	if(d01>=0 && d02>=0){
-		return {g[0].ScalarProduct(neigh[0])+l[0],VectorType{1.,0.,0.}};}
+		const ScalarType norm0 = g[0].ScalarProduct(neigh[0]);
+		return {norm0+l[0],VectorType{1./norm0,0.,0.}};}
 	
 	if(d12>=0 && d10>=0){
-		return {g[1].ScalarProduct(neigh[1])+l[1],VectorType{0.,1.,0.}};}
+		const ScalarType norm1 = g[1].ScalarProduct(neigh[1]);
+		return {norm1+l[1],VectorType{0.,1./norm1,0.}};}
 	
 	if(d20>=0 && d21>=0){
-		return {g[2].ScalarProduct(neigh[2])+l[2],VectorType{0.,0.,1.}};}
+		const ScalarType norm2 = g[2].ScalarProduct(neigh[2]);
+		return {norm2+l[2],VectorType{0.,0.,1./norm2}};}
 	
 	/*		// We use the coordinate chart mapping neigh[0],neigh[1],neigh[2]
 	 // onto (0,0), (1,0), (0,1)
@@ -242,10 +251,12 @@ const -> std::pair<ComponentType, VectorType> {
 	
 	typedef DifferentiationType<ComponentType, VectorType> DiffType;
 	Vector<DiffType, Dimension> zopt;
+	VectorType zopt_raw;
 	
 	// Find the optimal point in the simplex determined by the neighbors
 	for (size_t i = 0; i < Dimension; ++i) {
-		zopt[i] = DiffType(z[i](lambda),i);
+		zopt_raw[i] = z[i](lambda);
+		zopt[i] = DiffType(zopt_raw[i],i);
 		// Differentiates along the i-th dimension
 	}
 	
@@ -253,9 +264,13 @@ const -> std::pair<ComponentType, VectorType> {
 	assert(std::abs(constraint.s) < 1e-6);
 	// TODO compare with meaningful value
 	
-	const VectorType weights = -V.Transpose()*constraint.v;
+	const VectorType weights = V.Transpose()*constraint.v /
+		zopt_raw.ScalarProduct(constraint.v);
 	// Get position of optimal neighbor
-	// (barycentric coefficients, not normalized)
+	// (barycentric coefficients, normalized to reproduce unit flow)
+//	std::cout << zopt_raw.ScalarProduct(constraint.v) << std::endl;
+	
+	// TODO : check normalization, ...
 	
 	//if (!weights.IsNonNegative()) {
 	//	return { std::numeric_limits<ComponentType>::infinity(), VectorType::Constant(0) }; }
@@ -385,19 +400,11 @@ const -> std::pair<ComponentType,Vec<2> > {
 	// constraint.v should be spanned by the neighbors
 	if constexpr(isSimple) {assert(abs(Determinant(v[0], v[1], constraint.v)) < 1e-6);}
 	
+	const ScalarType normalization = p.ScalarProduct(constraint.v);
 	auto const gram = Sym2::EuclideanGram(v);
 	Vec<2> const weights = -
 	gram.Inverse()*Vec<2>{v[0].ScalarProduct(constraint.v),
-		v[1].ScalarProduct(constraint.v)};
-	
-	/*
-	 std::cout << "In hl edge "
-	 ExportVarArrow(V)
-	 ExportVarArrow(weights)
-	 ExportVarArrow(p)
-	 ExportVarArrow(GradNorm(V*weights)-p)
-	 << std::endl;
-	 */
+		v[1].ScalarProduct(constraint.v)} / normalization;
 	
 	// Weights should be positive .. up to numerical precision
 	//assert(weights.IsNonNegative());
