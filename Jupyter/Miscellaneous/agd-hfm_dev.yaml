@@ -1,0 +1,12 @@
+name: agd-hfm_dev
+channels:
+  - conda-forge
+dependencies:
+  - matplotlib
+  - notebook
+  - scipy
+  - conda-build
+  - conda-verify
+  - anaconda-client
+  - nbformat
+#  - ipywidgets

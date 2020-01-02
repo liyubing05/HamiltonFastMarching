@@ -1,0 +1,10 @@
+name: hfm-jupyter-mayavi
+channels:
+  - conda-forge
+  - agd-lbr
+dependencies:
+#  - mayavi
+  - hfm
+  - matplotlib
+  - notebook
+  - scipy
