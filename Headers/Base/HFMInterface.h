@@ -15,9 +15,10 @@
 template<typename TTraits> struct HFMInterface {
     typedef TTraits Traits;
     typedef HamiltonFastMarching<Traits> HFM;
-    Redeclare5Types(HFM,ActiveNeighFlagType,StencilDataType,DiscreteFlowType,
-					ExtraAlgorithmInterface,GeodesicSolverInterface);
-    Redeclare5Types(Traits,DiscreteType,ScalarType,PointType,VectorType,IndexType);
+    Redeclare7Types(HFM,ActiveNeighFlagType,StencilDataType,DiscreteFlowType,
+					ExtraAlgorithmInterface,GeodesicSolverInterface,IndexCRef,OffsetCRef);
+    Redeclare6Types(Traits,DiscreteType,ScalarType,PointType,VectorType,IndexType,
+					IndexDiff);
 	Redeclare1Type(IO,KeyCRef)
     Redeclare2Constants(Traits,Dimension,mathPi)
 
@@ -31,7 +32,7 @@ template<typename TTraits> struct HFMInterface {
     std::vector<std::unique_ptr<ExtraAlgorithmInterface> > extras;
     std::unique_ptr<TimeDependentFields<Traits> > pTime;
     std::unique_ptr<GeodesicSolverInterface> pGeodesicSolver;
-	int spreadSeeds=-2;
+	ScalarType seedRadius=0;
 	
     HFMInterface(IO & _io, StencilDataType & _stencil) :io(_io), stencil(_stencil) {};
     virtual void Run();

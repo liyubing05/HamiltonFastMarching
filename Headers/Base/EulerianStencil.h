@@ -24,6 +24,7 @@ template<typename TDiff, int nSym, int nFor=0, int nM=1> struct
 EulerianStencil {
     typedef TDiff DifferenceType;
     static const int nForward = nFor, nSymmetric = nSym, nMax = nM;
+    Redeclare3Types(DifferenceType, ScalarType,OffsetType,MultiplierType)
 
     // All data
     std::array<std::array<DifferenceType, nSymmetric>, nMax> symmetric;
@@ -40,11 +41,15 @@ EulerianStencil {
     static const int nMaxBits = CeilLog2<nMax>::value;
     
     /// Encodes which neighbors are active at a given point
-    typedef std::bitset<nNeigh+nMaxBits> ActiveNeighFlagType;
+	struct ActiveNeighFlagType : std::bitset<nNeigh+nMaxBits> {
+		using Superclass = std::bitset<nNeigh+nMaxBits>;
+		explicit operator ScalarType() const {return this->to_ullong();}
+		explicit ActiveNeighFlagType(ScalarType a):Superclass((unsigned long long)a){}
+		ActiveNeighFlagType(){}
+	};
     static int GetIMax(ActiveNeighFlagType b);
     static void SetIMax(ActiveNeighFlagType & b, int iMax);
     
-    Redeclare3Types(DifferenceType, ScalarType,OffsetType,MultiplierType)
     typedef QuadraticMax<ScalarType,nMax> QuadType;
     ScalarType HopfLaxUpdate(OffsetType, ScalarType, const MultiplierType &,
                              QuadType &, ActiveNeighFlagType &) const;
@@ -52,10 +57,11 @@ EulerianStencil {
 	using CommonStencilType = CommonStencil<OffsetType,ScalarType,nActiveNeigh>;
 	Redeclare3Types(CommonStencilType,DiscreteFlowElement,DiscreteFlowType,RecomputeType);
     template<typename F> RecomputeType
-	HopfLaxRecompute(const F &,const MultiplierType &, ActiveNeighFlagType, DiscreteFlowType &) const;
+	HopfLaxRecompute(const F &,const MultiplierType &,
+					 ActiveNeighFlagType, DiscreteFlowType &) const;
 };
 
-// ---- Enhanced offsets, referred to as differences (define the finite difference scheme) ---
+// ---- Enhanced offsets, referred to as differences  ---
 /** A Difference is a basic component of a PDE scheme. It is the data of an offset and weight.
  The weight which is either specified directly or as a baseweight and a multiplier index, within [0,VMultSize[.*/
 
@@ -71,7 +77,8 @@ struct EulerianDifference {
     OffsetType offset;
     ScalarType baseWeight;
     ShortType multIndex;
-    ScalarType Weight(const MultiplierType & mult) const {return baseWeight*square(mult[multIndex]);}
+    ScalarType Weight(const MultiplierType & mult) const {
+		return baseWeight*square(mult[multIndex]);}
 };
 
 template<typename TOff, typename TScal>
@@ -85,7 +92,8 @@ struct EulerianDifference<TOff,TScal,1> {
 
     OffsetType offset;
     ScalarType baseWeight;
-    ScalarType Weight(const MultiplierType & mult) const {return baseWeight*square(mult);}
+    ScalarType Weight(const MultiplierType & mult) const {
+		return baseWeight*square(mult);}
 };
 
 template<typename TOff, typename TScal>
@@ -109,7 +117,8 @@ struct EulerianDifference<TOff,TScal,0> {
 template<typename TS, size_t n>
 struct QuadraticMax {
     typedef TS ScalarType;
-    static constexpr ScalarType Infinity() {return std::numeric_limits<ScalarType>::infinity();}
+    static constexpr ScalarType Infinity() {
+		return std::numeric_limits<ScalarType>::infinity();}
     
     ScalarType minVal=-Infinity();
     
