@@ -30,7 +30,6 @@ dom(_stencilData.dims), stencilData(_stencilData){
     
     activeNeighs.dims = values.dims;
     activeNeighs.resize(values.size());
-    
     stencilData.Initialize(this);
 };
 
@@ -178,9 +177,8 @@ VisibleOffset(const IndexType & acceptedIndex, const OffsetType & offset,
     DomainTransformType result = dom.Periodize(updatedIndex,acceptedIndex);
     if(!result.IsValid()) return result;
     for(ExtraAlgorithmInterface * p : extras.visible){
-        if(!p->Visible(acceptedIndex,offset,updatedIndex))
-            result.Invalidate();
-            }
+        if(!p->Visible(acceptedIndex,offset,updatedIndex)) result.Invalidate();
+	}
     return result;
 }
 

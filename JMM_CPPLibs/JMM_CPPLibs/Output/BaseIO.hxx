@@ -5,19 +5,6 @@
 #ifndef BaseIO_hxx
 #define BaseIO_hxx
 
-// ----- Help related ----
-void BaseIO::SetHelp(KeyCRef key, const std::string & help) {
-	if(keyHelp.erase(key)){
-		std::ostringstream oss;
-		oss << "----- Help for key : " << key << " -----\n"
-		<< help << "\n------------------------\n";
-		SendMsg(false, oss.str());
-	} else {
-		unusedHelp.push_back(key);
-	}
-}
-
-
 // ---- Data container ----
 
 struct BaseIO::RawElement {
@@ -34,8 +21,11 @@ struct BaseIO::RawElement {
     bool IsScalar() const {return !data.empty() && dims.size()==0;}
     void Clear(SetterTag tag) {str.clear(); dims.clear(); data.clear();setter=tag;}
     RawElement(SetterTag tag):setter(tag){};
-    DiscreteType FlattenedLength() const {
-        if(IsString()) {ExceptionMacro("BaseIO::RawElement::FlattenedLength error, field is a string");}
+    DiscreteType FlattenedLength(const bool empty=false) const {
+        /* When the data is empty, and the size is empty, 
+        (a.k.a the field will hold a yet unspecified scalar) 
+        IsString returns a false positive.*/
+        if(!empty && IsString()) {ExceptionMacro("BaseIO::RawElement::FlattenedLength error, field is a string");}
         DiscreteType res=1;
         for(auto dim : dims) res*=dim;
         return res;
@@ -104,19 +94,11 @@ void BaseIO::UsageReport(){
         SetString("visitedUnset", oss.str());
         if(verbosity>=3) _Msg<false,BaseIO>(this) << "Visited but unset fields : " << oss.str() << "\n";
     }
-	
-	if(!keyHelp.empty()){
-		std::ostringstream oss;
-		oss << "Sorry, no help found for:";
-		for(KeyCRef key : keyHelp) oss << " " << key ;
-		oss << "\n";
-		SendMsg(false, oss.str());
-	}
-	{
+/*	{
 		std::ostringstream oss;
 		for(KeyCRef key : unusedHelp) oss << key << " ";
 		SetString("unusedHelp",oss.str());
-	}
+	}*/
     currentSetter = SetterTag::User;
 	
 }
