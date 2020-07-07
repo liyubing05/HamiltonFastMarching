@@ -16,7 +16,7 @@ if true %Some geodesics, around the origin, without obstacles.
     arrPos = (input.gridScale/2):input.gridScale:(1-input.gridScale/2);
     [x,y,theta]=meshgrid(arrPos,arrPos,(0:(nTheta-1))*(2*pi/nTheta));
     
-    modelName = 'DubinsExt2'; %Alternatively : 'ReedsSheppExt2','ReedsSheppForwardExt2', 'ElasticaExt2', 'DubinsExt2'
+    modelName = 'ReedsSheppExt2'; %Alternatively : 'ReedsSheppExt2','ReedsSheppForwardExt2', 'ElasticaExt2', 'DubinsExt2'
     input.eps=0.1;%Relaxation parameter
 
     % The three folloinwg fields may be uniform over the domain, or state dependent. E.g. =1, or =ones(n,n,nTheta).
