@@ -80,26 +80,62 @@ template<typename T> void FirstVariation<T>::Finally(HFMI*that){
         std::vector<std::pair<IndexType, ScalarType> > iw;
         auto indIt=inds.begin(); auto wIt=weights.begin();
         Array<MultType,Dimension> sensitivity;
-        for(int i=0; i<lengths.size(); ++i){
-            for(int k=0; k<lengths[i]; ++k, ++indIt, ++wIt){
-                PointType p = that->stencil.Param().ADim(*indIt);
-                if(!that->pFM->dom.Periodize(p,p).IsValid()) {
-                    ExceptionMacro("Error : inspectSensitivity data points are out of range");}
-                iw.push_back({that->pFM->dom.IndexFromPoint(p),*wIt});
-            }
-            sensitivity.clear();
-            auto sensitiveSeedIndices = BackwardVariation(iw,sensitivity);
-            io.SetArray("costSensitivity_"+std::to_string(i),sensitivity);
+
+        auto sumStatus=io.template Get<ScalarType>("sumCostSensitivity",1.);
+
+        if(io.HasField("sumCostSensitivity") && sumStatus==1){
+
+            Array<MultType,Dimension> sumSensitivity;
+            const Array<ScalarType, Dimension> & values = pFM->values;
+            if(sumSensitivity.empty()){sumSensitivity.dims = values.dims;
+                sumSensitivity.resize(values.size(),DiffHelper::NullMult());}
+
+            for(int i=0; i<lengths.size(); ++i){
+                for(int k=0; k<lengths[i]; ++k, ++indIt, ++wIt){
+                    PointType p = that->stencil.Param().ADim(*indIt);
+                    if(!that->pFM->dom.Periodize(p,p).IsValid()) {
+                        ExceptionMacro("Error : inspectSensitivity data points are out of range");}
+                    iw.push_back({that->pFM->dom.IndexFromPoint(p),*wIt});
+                }
+                sensitivity.clear();
+                auto sensitiveSeedIndices = BackwardVariation(iw,sensitivity);
+                std::transform(sumSensitivity.begin(), sumSensitivity.end(), sensitivity.begin(),
+                        sumSensitivity.begin(), std::plus<MultType>());
+
 //            MultArrayIO<>::Set(that,"costSensitivity_"+std::to_string(i),sensitivity);
-            
-            
-            std::vector<std::pair<PointType,ScalarType> > sensitiveSeeds;
-            sensitiveSeeds.reserve(sensitiveSeedIndices.size());
-            for(const auto & iS : sensitiveSeedIndices){
-                sensitiveSeeds.push_back({that->stencil.Param().ReDim(that->pFM->dom.PointFromIndex(iS.first)),iS.second});}
-            io.SetVector("seedSensitivity_"+std::to_string(i),sensitiveSeeds);
-            
-            iw.clear();
+
+                std::vector<std::pair<PointType,ScalarType> > sensitiveSeeds;
+                sensitiveSeeds.reserve(sensitiveSeedIndices.size());
+                for(const auto & iS : sensitiveSeedIndices){
+                    sensitiveSeeds.push_back({that->stencil.Param().ReDim(that->pFM->dom.PointFromIndex(iS.first)),iS.second});}
+                io.SetVector("seedSensitivity_"+std::to_string(i),sensitiveSeeds);
+
+                iw.clear();
+            }
+
+            io.SetArray("costSensitivity",sumSensitivity);
+        }
+        else{
+            for(int i=0; i<lengths.size(); ++i){
+                for(int k=0; k<lengths[i]; ++k, ++indIt, ++wIt){
+                    PointType p = that->stencil.Param().ADim(*indIt);
+                    if(!that->pFM->dom.Periodize(p,p).IsValid()) {
+                        ExceptionMacro("Error : inspectSensitivity data points are out of range");}
+                    iw.push_back({that->pFM->dom.IndexFromPoint(p),*wIt});
+                }
+                sensitivity.clear();
+                auto sensitiveSeedIndices = BackwardVariation(iw,sensitivity);
+                io.SetArray("costSensitivity_"+std::to_string(i),sensitivity);
+//            MultArrayIO<>::Set(that,"costSensitivity_"+std::to_string(i),sensitivity);
+
+                std::vector<std::pair<PointType,ScalarType> > sensitiveSeeds;
+                sensitiveSeeds.reserve(sensitiveSeedIndices.size());
+                for(const auto & iS : sensitiveSeedIndices){
+                    sensitiveSeeds.push_back({that->stencil.Param().ReDim(that->pFM->dom.PointFromIndex(iS.first)),iS.second});}
+                io.SetVector("seedSensitivity_"+std::to_string(i),sensitiveSeeds);
+
+                iw.clear();
+            }
         }
     }
     if(io.HasField("costVariation") || io.HasField("seedValueVariation")){
