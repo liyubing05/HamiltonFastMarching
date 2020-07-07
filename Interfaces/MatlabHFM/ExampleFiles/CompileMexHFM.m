@@ -1,11 +1,11 @@
 % Copyright Jean-Marie Mirebeau, University Paris-Sud, CNRS, University Paris-Saclay
 
 if verLessThan('matlab','8.1')
-    cxxFlags = ['CXXFLAGS="-std=c++17" ' ...
+    cxxFlags = ['CXXFLAGS="-std=c++17 -fPIC" ' ...
         'CXXLIBS="\$CXXLIBS -lc++" ' ]; % This flag is required on some platforms, but must be commented on others...
     outputFlag = '-o ';
 else
-    cxxFlags = 'CXXFLAGS="-std=c++17" ';
+    cxxFlags = 'CXXFLAGS="-std=c++17 -fPIC" ';
     outputFlag = '-output ';
 end
 
