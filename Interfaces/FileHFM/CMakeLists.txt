@@ -14,6 +14,13 @@ include(${CMAKE_CURRENT_SOURCE_DIR}/../common.cmake)
 include(ide_headers_layout.cmake)
 include_directories(${PROJECT_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
+find_package(OpenMP)
+if (OPENMP_FOUND)
+	set (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+	set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+	set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
+endif()
+
 cmake_policy(SET CMP0057 NEW)
 if("Seismic3SIMD" IN_LIST ModelNames)
 	set(XSIMD_dir "/Users/mirebeau/Dropbox/Programmes/2019/4_Avril/SimdTest/xsimd-master/include" CACHE FILEPATH "xsimd directory")

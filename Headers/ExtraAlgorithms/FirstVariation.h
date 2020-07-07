@@ -5,6 +5,8 @@
 #ifndef FirstVariation_h
 #define FirstVariation_h
 
+#include <omp.h>
+
 // Forward and backward differentiation of the value with respect to variations of the cost function
 // (which is the inverse of the speed function), and of the seeds values.
 // TODO : make this exact as well in the case of second order differences/time varying speed field.
@@ -83,6 +85,7 @@ template<typename T> void FirstVariation<T>::Finally(HFMI*that){
 
         auto sumStatus=io.template Get<ScalarType>("sumCostSensitivity");
 
+//        #pragma omp parallel for private(iw) shared(sensitivity) reduction(+:sensitivity)
         for(int i=0; i<lengths.size(); ++i) {
             for (int k = 0; k < lengths[i]; ++k, ++indIt, ++wIt) {
                 PointType p = that->stencil.Param().ADim(*indIt);
