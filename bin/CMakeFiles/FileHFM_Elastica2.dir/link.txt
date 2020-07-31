@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp    -rdynamic CMakeFiles/FileHFM_Elastica2.dir/FileHFM.cpp.o  -o FileHFM_Elastica2 

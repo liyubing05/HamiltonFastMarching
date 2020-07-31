@@ -1,0 +1,1726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="FileHFM"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\JMM_CPPLibs\;CMake Files\..\..\Headers\;CMake Files\..\..\Headers\Base\;CMake Files\..\..\Headers\Base\Implementation\;CMake Files\..\..\Headers\Specializations\;CMake Files\..\..\Headers\Specializations\Implementation\;CMake Files\..\..\Headers\ExtraAlgorithms\;CMake Files\..\..\Headers\ExtraAlgorithms\Implementation\;CMake Files\..\..\Headers\Experimental\;CMake Files\..\..\Headers\Experimental\Implementation\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann3_Periodic">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann3_Periodic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann3_Periodic"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann3_Periodic"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann3_Periodic/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann3_Periodic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann3_Periodic"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann3_Periodic/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Rander2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Rander2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Rander2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Rander2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Rander2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Rander2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Rander2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Rander2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForwardExt2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForwardExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForwardExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForwardExt2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForwardExt2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForwardExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForwardExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForwardExt2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppExt2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppExt2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppExt2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppExt2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ElasticaExt2_5">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ElasticaExt2_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ElasticaExt2_5"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ElasticaExt2_5"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ElasticaExt2_5/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ElasticaExt2_5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ElasticaExt2_5"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ElasticaExt2_5/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForward3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForward3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForward3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForward3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForward3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForward3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForward3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForward3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Elastica2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Elastica2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Elastica2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Elastica2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Elastica2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Elastica2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Elastica2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Elastica2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Seismic2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Seismic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Seismic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Seismic2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Seismic2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Seismic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Seismic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Seismic2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForward2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForward2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForward2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForward2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsSheppForward2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsSheppForward2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsSheppForward2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsSheppForward2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_SeismicTopographic2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_SeismicTopographic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=SeismicTopographic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_SeismicTopographic2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_SeismicTopographic2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_SeismicTopographic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=SeismicTopographic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_SeismicTopographic2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsShepp2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsShepp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsShepp2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsShepp2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsShepp2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsShepp2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsShepp2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsShepp2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Isotropic2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Isotropic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Isotropic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Isotropic2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Isotropic2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Isotropic2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Isotropic2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Isotropic2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Isotropic3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Isotropic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Isotropic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Isotropic3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Isotropic3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Isotropic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Isotropic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Isotropic3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic3p1">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic3p1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic3p1"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic3p1"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AsymmetricQuadratic3p1/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AsymmetricQuadratic3p1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AsymmetricQuadratic3p1"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AsymmetricQuadratic3p1/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Seismic3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Seismic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Seismic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Seismic3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Seismic3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Seismic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Seismic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Seismic3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Dubins2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Dubins2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Dubins2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Dubins2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Dubins2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Dubins2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Dubins2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Dubins2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_DubinsExt2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_DubinsExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=DubinsExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_DubinsExt2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_DubinsExt2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_DubinsExt2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=DubinsExt2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_DubinsExt2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_SeismicTopographic3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_SeismicTopographic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=SeismicTopographic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_SeismicTopographic3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_SeismicTopographic3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_SeismicTopographic3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=SeismicTopographic3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_SeismicTopographic3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_TTI2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_TTI2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=TTI2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_TTI2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_TTI2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_TTI2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=TTI2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_TTI2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Elastica2_9">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Elastica2_9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Elastica2_9"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Elastica2_9"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Elastica2_9/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Elastica2_9" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Elastica2_9"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Elastica2_9/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_TTI3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_TTI3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=TTI3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_TTI3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_TTI3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_TTI3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=TTI3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_TTI3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsShepp3">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsShepp3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsShepp3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsShepp3"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_ReedsShepp3/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_ReedsShepp3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=ReedsShepp3"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_ReedsShepp3/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_IsotropicDiff2">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_IsotropicDiff2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=IsotropicDiff2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_IsotropicDiff2"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_IsotropicDiff2/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_IsotropicDiff2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=IsotropicDiff2"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_IsotropicDiff2/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AlignedBillard">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AlignedBillard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AlignedBillard"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AlignedBillard"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_AlignedBillard/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_AlignedBillard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=AlignedBillard"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_AlignedBillard/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann4">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann4"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann4"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann4/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann4"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann4/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_RiemannLifted2_Periodic">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_RiemannLifted2_Periodic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=RiemannLifted2_Periodic"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_RiemannLifted2_Periodic"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_RiemannLifted2_Periodic/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_RiemannLifted2_Periodic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=RiemannLifted2_Periodic"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_RiemannLifted2_Periodic/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann5">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann5"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann5"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FileHFM_Riemann5/fast">
+				<Option output="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/FileHFM_Riemann5" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/liyx0l/Applications/hfm/Clion/cmake_build_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DModelName=Riemann5"/>
+					<Add directory="/home/liyx0l/Applications/hfm/JMM_CPPLibs"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Headers"/>
+					<Add directory="/home/liyx0l/Applications/hfm/Interfaces/FileHFM"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 FileHFM_Riemann5/fast"/>
+					<CompileFile command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j56 -f &quot;/home/liyx0l/Applications/hfm/Clion/cmake_build_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/FileHFM.cpp">
+			<Option target="FileHFM_Riemann3_Periodic"/>
+			<Option target="FileHFM_AsymmetricQuadratic2"/>
+			<Option target="FileHFM_Rander2"/>
+			<Option target="FileHFM_ReedsSheppForwardExt2"/>
+			<Option target="FileHFM_ReedsSheppExt2"/>
+			<Option target="FileHFM_ElasticaExt2_5"/>
+			<Option target="FileHFM_ReedsSheppForward3"/>
+			<Option target="FileHFM_Elastica2"/>
+			<Option target="FileHFM_Seismic2"/>
+			<Option target="FileHFM_ReedsSheppForward2"/>
+			<Option target="FileHFM_SeismicTopographic2"/>
+			<Option target="FileHFM_ReedsShepp2"/>
+			<Option target="FileHFM_Isotropic2"/>
+			<Option target="FileHFM_AsymmetricQuadratic3"/>
+			<Option target="FileHFM_Isotropic3"/>
+			<Option target="FileHFM_Riemann2"/>
+			<Option target="FileHFM_AsymmetricQuadratic3p1"/>
+			<Option target="FileHFM_Riemann3"/>
+			<Option target="FileHFM_Seismic3"/>
+			<Option target="FileHFM_Dubins2"/>
+			<Option target="FileHFM_DubinsExt2"/>
+			<Option target="FileHFM_SeismicTopographic3"/>
+			<Option target="FileHFM_TTI2"/>
+			<Option target="FileHFM_Elastica2_9"/>
+			<Option target="FileHFM_TTI3"/>
+			<Option target="FileHFM_ReedsShepp3"/>
+			<Option target="FileHFM_IsotropicDiff2"/>
+			<Option target="FileHFM_AlignedBillard"/>
+			<Option target="FileHFM_Riemann4"/>
+			<Option target="FileHFM_RiemannLifted2_Periodic"/>
+			<Option target="FileHFM_Riemann5"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/ide_headers_layout.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../common.cmake">
+			<Option virtualFolder="CMake Files\..\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../JMM_CPPLibs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\JMM_CPPLibs\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Base/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Base\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Base/Implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Base\Implementation\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Specializations/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Specializations\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Specializations/Implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Specializations\Implementation\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/ExtraAlgorithms/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\ExtraAlgorithms\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/ExtraAlgorithms/Implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\ExtraAlgorithms\Implementation\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Experimental/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Experimental\"/>
+		</Unit>
+		<Unit filename="/home/liyx0l/Applications/hfm/Interfaces/FileHFM/../../Headers/Experimental/Implementation/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\..\..\Headers\Experimental\Implementation\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
